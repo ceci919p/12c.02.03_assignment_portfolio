@@ -1,4 +1,4 @@
-/*colors and fonts*/
+/*----------------------------colors-----------------------*/
 :root {
   --color-darker: #0b1036;
   --color-dark: rgb(64, 64, 64);
@@ -7,11 +7,13 @@
   --color-lighter: #fff;
   --color-header: #6e8ae65e;
 
-  /*fonts*/
+  /*----------------------------fonts-----------------------*/
   --font-display: "Lobster", cursive;
   --font-paragraph: "Open Sans", sans-serif;
   --font-display2: "Neonderthaw", cursive;
 }
+
+/*----------------------------universial rules-----------------------*/
 
 * {
   margin: 0px;
@@ -20,7 +22,7 @@
   box-sizing: border-box;
 }
 
-/*navigation*/
+/*----------------------------navigation-----------------------*/
 
 nav {
   padding: 1rem;
@@ -59,6 +61,8 @@ nav a {
   color: var(--color-graphics);
 }
 
+/*----------------------------hamburger menu-----------------------*/
+
 .hamburger {
   display: none;
   cursor: pointer;
@@ -73,6 +77,8 @@ nav a {
   transition: all 0.3s ease-in-out;
   background-color: white;
 }
+
+/*----------------------------mediaquerys-----------------------*/
 
 @media (max-width: 768px) {
   .hamburger {
