@@ -5,20 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Portfolio</title>
+    <title>Frontpage</title>
   </head>
   <body>
-    <main>
-      <nav>
+
+      <nav class="navbar">
+        <a class="logo" href="index.html">Logo</a>
         <ul class="nav_menu">
-          <li><a href="#">Fonts and UI Cards</a></li>
-          <li><a href="#">Colors and animations</a></li>
-          <li><a href="#">Responsive design</a></li>
-          <li><a href="#">Designing with frameworks</a></li>
+          <li class="nav_item"><a href="fonts_cards.html" class="nav_link">Fonts and UI Cards</a></li>
+          <li class="nav_item"><a href="colors_animations.html" class="nav_link">Colors and animations</a></li>
+          <li class="nav_item"><a href="responsive.html" class="nav_link">Responsive design</a></li>
+          <li class="nav_item"><a href="frameworks.html" class="nav_link">Designing with frameworks</a></li>
         </ul>
+
+         <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
       </nav>
 
       <header></header>
+          <main></main>
 
       <section id="intro"></section>
       <section id="list"></section>
@@ -26,5 +34,6 @@
     </main>
 
     <footer></footer>
+     <script src="script.js"></script>
   </body>
 </html>
