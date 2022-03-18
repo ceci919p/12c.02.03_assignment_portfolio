@@ -129,7 +129,6 @@ nav a {
 .nav_link {
   transition: 0.7s ease;
   color: var(--color-darker);
-  font-weight: bolder;
 }
 
 .nav_link:hover {
@@ -187,6 +186,7 @@ header {
   align-items: center;
   justify-content: space-around;
   color: var(--color-darker);
+  background-color: var(--color-lighter);
 }
 
 .color_2 {
@@ -209,7 +209,7 @@ header {
 
 .list_container {
   display: grid;
-  grid-template-columns: auto minmax(0, 1200px) auto;
+  grid-template-columns: auto minmax(0, 1000px) auto;
   align-items: center;
 }
 
@@ -219,6 +219,10 @@ header {
 
 .list_items_wrapper {
   grid-column: 2/3;
+}
+
+.assignment_graphics {
+  max-width: 400px;
 }
 
 .assignment_text {
@@ -322,6 +326,10 @@ footer li a:hover {
     padding: 5rem 2rem;
   }
 
+  .list_items_wrapper > h2 {
+    margin-bottom: 3rem;
+  }
+
   article {
     display: flex;
   }
@@ -337,7 +345,15 @@ footer li a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-inline: 3rem;
+    padding: 0;
+  }
+
+  .text_right {
+    margin-left: 2rem;
+  }
+
+  .text_left {
+    margin-right: 2rem;
   }
 
   .align_end {
