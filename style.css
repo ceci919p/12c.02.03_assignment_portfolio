@@ -43,7 +43,8 @@ body {
       farthest-corner at bottom right,
       rgba(255, 50, 50, 0.5),
       transparent 400px
-    );
+    ),
+    radial-gradient(circle at top right, rgb(255, 220, 220), transparent 300px);
 }
 
 img {
@@ -176,7 +177,7 @@ nav a {
 
 /*----------------------------header-----------------------*/
 
-#home {
+header {
   display: flex;
   min-height: 80vh;
   align-items: center;
@@ -208,6 +209,10 @@ nav a {
   min-width: 300px;
 }
 
+.header_text > p {
+  margin-bottom: 4rem;
+}
+
 /*----------------------------intro sections-----------------------*/
 
 .highlight {
@@ -236,11 +241,13 @@ nav a {
 #list {
   min-height: 80vh;
   padding: 1rem;
+
+  background-color: #ffffff73;
 }
 
 .list_container {
   display: grid;
-  grid-template-columns: auto minmax(0, 1000px) auto;
+  grid-template-columns: auto minmax(0, 1200px) auto;
   align-items: center;
 }
 
@@ -252,29 +259,25 @@ nav a {
   grid-column: 2/3;
 }
 
+.list_items_wrapper > h2 {
+  font-size: 3rem;
+}
+
 .assignment_graphics {
-  width: 35vw;
-  height: 35vw;
-  min-width: 300px;
-  min-height: 300px;
-  background-color: var(--color-darker);
+  width: 30vw;
+  height: 30vw;
+  min-width: 250px;
+  min-height: 206px;
 }
 
-.graphics_wrapper {
-  display: flex;
-  flex-direction: row-reverse;
+.number {
+  font-size: 1.5rem;
 }
 
+.graphics_wrapper,
 .graphics_wrapper_right {
   display: flex;
-
-  justify-content: center;
-  align-items: flex-end;
-}
-
-.graphics_wrapper_right > aside {
-  text-orientation: mixed;
-  writing-mode: sideways-lr;
+  flex-direction: row-reverse;
 }
 
 aside {
@@ -283,19 +286,23 @@ aside {
 }
 
 .assignment_text {
-  padding: 1rem;
+  padding-inline: 1rem;
+}
+
+.assignment_text > h3 {
+  margin: 0;
 }
 
 .assignment_text > h3 {
   margin-block: 1rem;
 }
 
-.assignment_graphics > img {
+/* .assignment_graphics > img {
   padding: 2rem;
 }
-
+ */
 article {
-  margin-block: 1rem;
+  margin-block: 4rem;
 }
 
 /*---------------------------fonts and cards-----------------------*/
@@ -383,7 +390,7 @@ footer li a:hover {
     left: 0;
   }
 
-  #home {
+  header {
     align-items: end;
   }
 }
@@ -411,6 +418,18 @@ footer li a:hover {
 
   .list_items_wrapper > h2 {
     margin-bottom: 3rem;
+  }
+
+  .graphics_wrapper_right > aside {
+    text-orientation: mixed;
+    writing-mode: sideways-lr;
+  }
+
+  .graphics_wrapper_right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
   }
 
   article {
