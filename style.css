@@ -297,25 +297,60 @@ aside {
   margin-block: 1rem;
 }
 
-/* .assignment_graphics > img {
-  padding: 2rem;
-}
- */
 article {
   margin-block: 4rem;
 }
 
 /*---------------------------fonts and cards-----------------------*/
 
-#font_cards {
-  background-color: var(--color-dark);
+.mockup {
+  display: grid;
+  grid-template-columns: auto minmax(0, 900px) auto;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  padding-inline: 1rem;
+}
+
+.mockup_wrapper {
+  grid-column: 2/3;
+}
+
+.mockup_items {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.desktop {
+  grid-column: 1/5;
+}
+
+.center_content > img {
+  margin-block: 1rem;
+  max-width: 400px;
+}
+
+.center_content {
   display: flex;
-  min-height: 80vh;
+  min-height: 70vh;
+  padding: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/*---------------------------colors and animation-----------------------*/
+
+.palette {
+  padding-block: 3rem;
+}
+
+.centered {
+  display: flex;
+  min-height: 70vh;
+  padding: 1.5rem;
   align-items: center;
   justify-content: space-around;
-  flex-wrap: wrap;
-  text-align: center;
-  color: white;
 }
 
 /*---------------------------footer-----------------------*/
@@ -400,6 +435,10 @@ footer li a:hover {
     text-align: start;
   }
 
+  .header_text > p {
+    margin-bottom: 1rem;
+  }
+
   p {
     margin-bottom: 1rem;
   }
@@ -441,6 +480,10 @@ footer li a:hover {
     flex-direction: row-reverse;
   }
 
+  .assignment_header {
+    min-height: 60vh;
+  }
+
   .assignment_text {
     width: 40vw;
     min-width: 300px;
@@ -467,6 +510,17 @@ footer li a:hover {
     text-align: start;
     margin-top: 1rem;
   }
+
+  .mockup {
+    margin-top: 0rem;
+    margin-bottom: 5rem;
+    padding-inline: 3rem;
+  }
+
+  .centered > div {
+    max-width: 50vw;
+  }
+
   footer {
     display: flex;
     padding: 5vh 2rem;
@@ -487,5 +541,11 @@ footer li a:hover {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 3rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .assignment_header {
+    min-height: 80vh;
   }
 }
