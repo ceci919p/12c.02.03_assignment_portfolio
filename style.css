@@ -154,7 +154,7 @@ nav a {
 
 /*----------------------------header-----------------------*/
 
-header {
+#home {
   display: flex;
   min-height: 80vh;
   align-items: center;
@@ -237,6 +237,19 @@ article {
   margin-block: 1rem;
 }
 
+/*---------------------------fonts and cards-----------------------*/
+
+#font_cards {
+  background-color: var(--color-dark);
+  display: flex;
+  min-height: 80vh;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+  color: white;
+}
+
 /*---------------------------footer-----------------------*/
 
 footer {
@@ -252,6 +265,7 @@ footer li a {
 }
 
 footer li a:hover {
+  text-decoration: underline;
 }
 
 .social_media {
