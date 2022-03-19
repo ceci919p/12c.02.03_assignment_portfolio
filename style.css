@@ -2,9 +2,9 @@
 :root {
   --color-darker: #000;
   --color-dark: #6d1919;
-  --color-accent1: #e55452;
-  --color-accent2: #f3aeac;
-  --color-light: #f5a44f;
+  --color-accent1: #ff89ff;
+  --color-accent2: #dd2c98;
+  --color-light: "";
   --color-lighter: #fff;
 
   /*----------------------------fonts-----------------------*/
@@ -52,23 +52,6 @@ img {
   max-width: 100%;
 }
 
-button {
-  display: inline-block;
-  height: 3rem;
-  padding: 1rem 2rem;
-  border: none;
-  font-size: 1rem;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  background-color: var(--color-accent1);
-}
-
-button > a {
-  color: var(--color-lighter);
-  text-decoration: none;
-}
-
 /*----------------------------typography-----------------------*/
 p {
   margin-bottom: 1.5rem;
@@ -111,6 +94,11 @@ h5 {
   font-size: 1.25rem;
 }
 
+.button {
+  font-size: 1.3rem;
+  color: var(--color-accent2);
+}
+
 /* small, .text_small {font-size: 0.8rem;} */
 
 /*----------------------------navigation-----------------------*/
@@ -122,7 +110,7 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: var(--color-darker);
+  color: var(--color-accent2);
 }
 
 .navbar {
@@ -155,7 +143,7 @@ nav a {
 }
 
 .nav_link:hover {
-  color: var(--color-light);
+  color: var(--color-accent1);
 }
 
 /*----------------------------hamburger menu-----------------------*/
@@ -205,7 +193,7 @@ header {
 }
 
 .header_text {
-  width: 30vw;
+  width: 45vw;
   min-width: 300px;
 }
 
@@ -447,12 +435,14 @@ footer li a:hover {
     padding: 2rem;
   }
   .highlight > div {
-    max-width: 50vw;
+    max-width: 45vw;
   }
 
   #list {
     min-height: 80vh;
-    padding: 5rem 2rem;
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+    padding-inline: 2rem;
   }
 
   .list_items_wrapper > h2 {
@@ -521,6 +511,11 @@ footer li a:hover {
     max-width: 50vw;
   }
 
+  .two_col {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
   footer {
     display: flex;
     padding: 5vh 2rem;
@@ -547,5 +542,10 @@ footer li a:hover {
 @media (min-width: 1000px) {
   .assignment_header {
     min-height: 80vh;
+  }
+
+  .conclusion {
+    padding-block: 0;
+    align-items: start;
   }
 }
