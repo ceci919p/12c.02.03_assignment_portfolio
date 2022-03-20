@@ -341,6 +341,11 @@ article {
   justify-content: space-around;
 }
 
+.two_col {
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 /*---------------------------footer-----------------------*/
 
 footer {
@@ -388,7 +393,7 @@ footer li a:hover {
     top: 70px;
     gap: 1rem;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.37);
+    background-color: var(--color-lighter);
     width: 100%;
     text-align: center;
     transition: 0.3s;
@@ -414,7 +419,7 @@ footer li a:hover {
   }
 
   header {
-    align-items: end;
+    align-items: center;
   }
 }
 
@@ -509,11 +514,6 @@ footer li a:hover {
 
   .centered > div {
     max-width: 50vw;
-  }
-
-  .two_col {
-    flex-direction: column;
-    flex-wrap: wrap;
   }
 
   footer {
